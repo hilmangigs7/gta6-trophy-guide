@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · all 55 trophies</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top">
+  <div class="masthead">
+    <div>
+      <p class="kicker">Grand Theft Auto VI · PlayStation 5 · 55 trophies</p>
+      <h1>Leonida Trophy Guide</h1>
+      <p class="sub">Every trophy with its official name, description and grade, a guide in our own words with its source, a roadmap to the platinum — and a checklist that remembers what you have earned.</p>
+    </div>
+    <div class="progress" id="progressBox" aria-live="polite">
+      <p class="progress-line"><strong id="progressText">0 of 55 earned</strong> <span id="progressPct">0%</span></p>
+      <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+      <p class="progress-grades" id="progressGrades">Platinum 0/1 · Gold 0/2 · Silver 0/6 · Bronze 0/46</p>
+    </div>
+  </div>
+  <div class="controls" id="controls">
+    <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission, activity…" autocomplete="off"></label>
+    <div class="kind-filters" id="kindFilters" role="group" aria-label="Filter by kind">
+      <button type="button" data-kind="all" class="active">All 55</button>
+      <button type="button" data-kind="story">Story</button>
+      <button type="button" data-kind="missable">Missable</button>
+      <button type="button" data-kind="collectible">Collectibles</button>
+      <button type="button" data-kind="activity">Activities</button>
+      <button type="button" data-kind="side">Side quests</button>
+      <button type="button" data-kind="crime">Crime</button>
+      <button type="button" data-kind="misc">Misc</button>
+      <button type="button" data-kind="online">Online</button>
+    </div>
+    <label class="grade">Grade
+      <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="spoilers"><input id="spoilers" type="checkbox"> Hide story spoilers</label>
+    <button id="export" type="button">Export progress</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+  </div>
+</header>
+
+<main>
+  <section id="roadmap-strip" aria-label="Roadmap at a glance">
+    <h2>Roadmap to the platinum <span class="roadmap-meta">about 200 hours · difficulty 4/10 · one playthrough · no online trophies</span></h2>
+    <div class="strip" id="stripStages"></div>
+    <p class="strip-warn">⚠ One trophy can be missed: the Chapter 1 balcony meditation for <strong>Positive Mental Attitude</strong> — do it before Chapter 1 ends. Every other trophy can be earned in free-roam after the story.</p>
+  </section>
+
+  <section id="list" aria-label="All trophies">
+    <h2>All 55 trophies <span class="list-meta" id="listCount"></span></h2>
+    <div class="cards" id="cards"></div>
+    <p class="empty" id="emptyState" hidden>No trophies match these filters. There are no online trophies in this list — all 55 are single-player.</p>
+  </section>
+
+  <section id="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the platinum, in full</h2>
+    <p class="roadmap-note">Play the story first, then the strangers, then activities, collectibles and crime — and finish with the 100% checklist. Only one trophy can be missed: do the Chapter 1 balcony meditation before Chapter 1 ends.</p>
+    <div class="stages" id="stages"></div>
+  </section>
+
+  <section id="missable" aria-label="Missable trophy warning">
+    <h2>⚠ The one trophy you can miss</h2>
+    <p><strong>Positive Mental Attitude</strong> — meditate at every spot across Leonida. In Chapter 1, after the mission <em>Down to Earth</em>, Lucia mentions meditating in the kitchen at Jason's house one morning and walks out to the balcony. Follow her, accept, and finish the meditation before Chapter 1 ends: it disappears after that, and it is not confirmed whether the trophy needs it. The 100% checklist only needs 15 of the 18 spots, so this warning is only about the trophy. Every other trophy can be earned in free-roam after the story.</p>
+  </section>
+
+  <section id="sources" aria-label="Sources">
+    <h2>Sources</h2>
+    <p>Official names, descriptions and grades are the PlayStation list as reported by Exophase and PSNProfiles. The guides are written in our own words from the guides below; where no published method exists yet, the guide says so instead of guessing. Never copy another guide's text — each trophy names its source beside its guide.</p>
+    <ul id="sourceList"></ul>
+    <p class="fineprint">Made for make.fun's “Build the best GTA 6 trophy guide” bounty. No Rockstar logo or official artwork is used. This guide works offline: it loads nothing from the network.</p>
+  </section>
+</main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
